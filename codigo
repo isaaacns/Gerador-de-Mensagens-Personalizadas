@@ -1,0 +1,21 @@
+
+import pandas as pd
+
+df = pd.read_excel("Planilha clientes perfil planejador (1).xlsx")
+
+def formatar_mensagem(row):
+    nome = row['NOME DO CLIENTE']
+    mensagem = row['MENSAGEM ']
+    nova_mensagem = f"{nome} {{\t{mensagem[:5]}{nome}{mensagem[5:]}}}"  # Formata a mensagem como arquivo CSS
+    return nova_mensagem
+    # Aplicando a função para cada linha do DataFrame
+df['mensagem_formatada'] = df.apply(formatar_mensagem, axis=1)
+
+
+# Exibindo o DataFrame com a mensagem formatada como arquivo CSS
+
+
+"""print(df['mensagem_formatada'])"""
+print(df[['NOME DO CLIENTE','TELEFONE','mensagem_formatada']])
+
+df.to_excel('Planilha clientes perfil planejador.xlsx')
