@@ -1,2 +1,2 @@
 # Gerador-de-Mensagens-Personalizadas
-Ele lê informações de uma planilha, onde cada linha representa um cliente, e cria mensagens de convite personalizadas usando o nome de cada cliente. Isso pode ser útil em situações de comunicação em massa, como enviar convites personalizados para eventos. 
+O sistema processa dados diretamente de uma planilha, onde cada linha corresponde a um cliente, e gera mensagens de convite personalizadas, inserindo o nome de cada cliente de forma dinâmica. Isso se torna extremamente útil para campanhas de comunicação em massa, como o envio de convites personalizados para eventos, garantindo uma abordagem mais personalizada e impactante para o público-alvo.. 
